@@ -18,7 +18,7 @@ import path from 'path';
           },
         });
   
-      const filePath = path.join(process.cwd(), 'public', 'GGC-BROCHURE.pdf');
+      const filePath = `${process.env.NEXT_PUBLIC_BASE_URL}/GGC-BROCHURE.pdf`;
       
 
         // Email options including the PDF attachment
@@ -71,4 +71,4 @@ import path from 'path';
         } catch (error) {
           console.error('Error sending email:', error);
         }
-  } `1`
+  }
